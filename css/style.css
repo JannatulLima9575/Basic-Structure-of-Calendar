@@ -1,40 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
-    padding: 0;
-    margin: 0;
-    font-family: "Roboto", serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", serif;
 }
 .section {
-    align-items: center;
-    justify-content: center;
-    background-image: url(/images/image.png);
-    align-items: center;
-    justify-content: center;
-}
-.common {
-    background-color: brown;
+  background-image: url(/images/image.png);
+  position: relative;
+  display: flex;
+  padding: 0 auto;
+  width: 1600px;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  left: 120px;
+  top: 100px;
 }
 .calendar {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows:30px repeat(5, 50px);
-    row-gap: 20px;
-    column-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 50px);
+  row-gap: 20px;
+  column-gap: 10px;
+  padding: 90px;
+  height: 60vh;
+  width: 60vh;
+  align-items: center;
+  justify-content: center;
+  background-color: cadetblue;
+  border-radius: 10px;
 }
-.date, .day {
-    background-color: beige;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
+.calendar:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 .day {
-    background-color: aqua;
-    font-size: 1em;
-    margin-top: 80px;
+  display: flex;
+  background-color: wheat;
+  font-size: 1em;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
 }
-h2 {
-    display: flex;
-    text-align: center;
+.day:hover {
+  background-color: black;
+  color: white;
+}
+.date {
+  position: relative;
+  display: flex;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  padding: 20px;
+  margin-top: 10px;
+}
+.date:hover {
+  color: black;
+  background-color: rgb(243, 225, 191);
+  border-radius: 50%;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
