@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", serif;
+}
+.section {
+    align-items: center;
+    justify-content: center;
+    background-image: url(/images/image.png);
+    align-items: center;
+    justify-content: center;
+}
+.common {
+    background-color: brown;
+}
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows:30px repeat(5, 50px);
+    row-gap: 20px;
+    column-gap: 10px;
+}
+.date, .day {
+    background-color: beige;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.day {
+    background-color: aqua;
+    font-size: 1em;
+    margin-top: 80px;
+}
+h2 {
+    display: flex;
+    text-align: center;
+}
